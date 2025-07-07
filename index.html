@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>beetroot-hw-07</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="body">
+    <main class="main-content">
+      <section class="section-form">
+        <h2 class="section-form-title">Форма для реєстрації</h2>
+        <form action="" method="get" class="form">
+          <label for="username" class="form-label">Повне ім'я</label>
+          <input
+            type="text"
+            id="username"
+            class="input"
+            placeholder="Вкажіть повне ім'я"
+            required
+          />
+
+          <label for="email" class="form-label">Email</label>
+          <input
+            type="email"
+            id="email"
+            class="input"
+            placeholder="Вкажіть email"
+            required
+          />
+
+          <label for="password" class="form-label">Пароль</label>
+          <input
+            type="password"
+            id="password"
+            class="input"
+            placeholder="Вкажіть пароль"
+            required
+          />
+
+          <label for="password-again" class="form-label"
+            >Підтвердження пароля</label
+          >
+          <input
+            type="password"
+            id="password-again"
+            class="input"
+            placeholder="Повторіть пароль"
+            required
+          />
+
+          <div class="form-gender">
+            <label for="gender-men" class="form-label">Стать</label>
+            <div class="gender-container">
+              <input
+                class="gender-input"
+                type="radio"
+                name="gender"
+                id="gender-men"
+                value="men"
+                required
+              />
+              <label for="gender-men" class="gender-text">чоловіча</label>
+            </div>
+            <div class="gender-container">
+              <input
+                type="radio"
+                name="gender"
+                id="gender-women"
+                value="women"
+              />
+              <label for="gender-women" class="gender-text">жіноча</label>
+            </div>
+          </div>
+
+          <div class="form-label-age">
+            <label for="age" class="form-label">Вік</label>
+            <input
+              type="number"
+              id="age"
+              name="age"
+              class="input"
+              placeholder="Вкажіть ваш вік"
+              min="0"
+              max="110"
+              required
+            />
+          </div>
+
+          <div>
+            <label for="course" class="form-course">Курс</label>
+            <select
+              name="course"
+              id="course"
+              class="form-select-course"
+              required
+            >
+              <option value="selected disabled">Виберіть курс</option>
+              <option value="Front-End">Front-End</option>
+              <option value="Back-End">Back-End</option>
+              <option value="Project Management">Project Management</option>
+              <option value="QA Manual">QA Manual</option>
+            </select>
+          </div>
+
+          <div class="form-address">
+            <label for="form-address" class="form-full-adress">
+              Повна адреса
+            </label>
+
+            <textarea
+              id="form-address"
+              class="address-textarea"
+              placeholder="Вкажіть країну, регіон, місто/селище, вулицю"
+              required
+              rows="3"
+            ></textarea>
+          </div>
+
+          <div class="checkbox-wrapper">
+            <input type="checkbox" id="privacy" name="privacy" required />
+            <label for="privacy">
+              Опція про погодження з умовами конфіденційності
+            </label>
+          </div>
+
+          <div class="btn-container">
+            <button type="reset" class="btn btn-reset">Очистити форму</button>
+            <button type="submit" class="btn btn-submit">
+              Зареєструватися
+            </button>
+          </div>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
